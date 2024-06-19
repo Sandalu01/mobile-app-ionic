@@ -1,0 +1,14 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url("https://img.freepik.com/free-vector/gradient-grainy-texture_23-2148981502.jpg?size=626&ext=jpg&ga=GA1.2.1068539699.1717852543&semt=sph")
+    no-repeat;
+    background-size: cover;  
+  
+    //get loading content below 
+    flex-direction: column;
+    }

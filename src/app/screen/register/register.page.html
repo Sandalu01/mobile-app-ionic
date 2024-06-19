@@ -1,0 +1,41 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+    <ion-title slot="start">Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Create an Account</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <!-- <form (submit)="register($event)"> -->
+              <form>
+              <ion-item>
+                <ion-label position="floating">Name</ion-label>
+                <ion-input type="text" required></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label position="floating">Email</ion-label>
+                <ion-input type="email" required></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label position="floating">Password</ion-label>
+                <ion-input type="password" required></ion-input>
+              </ion-item>
+              <ion-button expand="full" type="submit" class="ion-margin-top" routerLink="/dashboard">Register</ion-button>
+            </form>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
