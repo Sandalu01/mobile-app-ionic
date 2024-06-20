@@ -21,15 +21,15 @@
               <form>
               <ion-item>
                 <ion-label position="floating">Name</ion-label>
-                <ion-input type="text" required></ion-input>
+                <ion-input type="text" required [(ngModel)]="name"></ion-input>
               </ion-item>
               <ion-item>
                 <ion-label position="floating">Email</ion-label>
-                <ion-input type="email" required></ion-input>
+                <ion-input type="email" required [(ngModel)]="email"></ion-input>
               </ion-item>
               <ion-item>
                 <ion-label position="floating">Password</ion-label>
-                <ion-input type="password" required></ion-input>
+                <ion-input type="password" required [(ngModel)]="password"></ion-input>
               </ion-item>
               <ion-button expand="full" type="submit" class="ion-margin-top" routerLink="/dashboard">Register</ion-button>
             </form>
