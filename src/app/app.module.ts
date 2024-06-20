@@ -13,6 +13,7 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TabBarComponent } from './screen/tab-bar/tab-bar.component';
+import { UserServiceService } from './services/user-service.service';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { TabBarComponent } from './screen/tab-bar/tab-bar.component';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     AngularFireDatabaseModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    UserServiceService
 
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
